@@ -9,7 +9,7 @@ declare global {
 	}
 }
 
-interface Rectangle {
+interface RECTANGLE {
 	x: number
 	y: number
 	width: number
