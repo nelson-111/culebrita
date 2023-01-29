@@ -16,3 +16,10 @@ interface RECTANGLE {
 	height: number
 	color: string
 }
+
+interface Bitmap {
+	x: number
+	y: number
+	rows: number
+	columns: number
+}
