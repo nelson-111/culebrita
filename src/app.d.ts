@@ -23,3 +23,8 @@ interface Bitmap {
 	rows: number
 	columns: number
 }
+
+interface CulebritaPart {
+	index: number
+	color: string
+}
