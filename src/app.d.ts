@@ -9,22 +9,33 @@ declare global {
 	}
 }
 
-interface RECTANGLE {
+type state = "pause" | "playing" | "lose" | "win" | "tutorial"
+
+interface hslColor {
+	hue: number
+	saturation: number
+	lightness: number
+}
+
+interface Being {
 	x: number
 	y: number
 	width: number
 	height: number
-	color: string
+	color: hslColor
+	speed: number
+	health: number
 }
 
-interface Bitmap {
+interface Projectile extends Being {
+	xDirection: number
+	yDirection: number
+}
+
+interface BricksSet {
 	x: number
 	y: number
 	rows: number
 	columns: number
-}
-
-interface CulebritaPart {
-	index: number
-	color: string
+	padding: number
 }
